@@ -7,6 +7,10 @@ This module demonstrates the ACCUMULATOR pattern in three classic forms:
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          Mark Hays and their colleagues.
 """
+
+# Read
+
+
 # ----------------------------------------------------------------------
 # Students: Read and run this program.  There is nothing else
 #           for you to do in here.  Just use it as an example.
