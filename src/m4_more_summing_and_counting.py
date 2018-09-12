@@ -12,8 +12,8 @@ in its "in graphics" form:
    IN GRAPHICS:   x = x + pixels
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Lucus Bendzsa.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import math
 import builtins  # Never necessary, but here for pedagogical reasons
@@ -90,13 +90,16 @@ def run_test_sum_from():
     print('       actual (from my code):  ', answer_from_my_code)
 
 # ----------------------------------------------------------------------
-# TODO: 2.
+# DOne: 2.
 #   When you have READ the above  run_test_sum_from  function,
 #   asking questions as needed, and you feel that you (mostly, at least)
 #   understand it, and you feel that you understand from the example:
 #     -- what an ORACLE answer is
+      #  Use other apporach you know to work
 #     -- what a KNOWN (typically, BY-HAND) answer is
+        # Nice and easy that yuo can solve
 #     -- what a FORMULA answer is
+        #  Use a knwon formula to check your answer
 #     -- how the above are used in testing
 #   THEN:
 # CHANGE THE TO DO at the beginning of this comment to DONE.
@@ -124,6 +127,12 @@ def sum_from(m, n):
     #   you must NOT use the 2 or 3-parameter versions
     #   of the RANGE expression, if you happen to know them.
     # ------------------------------------------------------------------
+    if m <= n:
+        for k in range (n-m+1):
+            n = n+1
+        p = n
+    else: print("error")
+    return p
 
 
 def run_test_factorial():
