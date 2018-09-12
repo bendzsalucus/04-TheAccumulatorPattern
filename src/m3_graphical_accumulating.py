@@ -29,8 +29,9 @@ def main():
     """ Calls the   TEST   functions in this module. """
     run_test_draw_parallel_lines()
     run_test_draw_lines()
-
-
+    point = rg.Point (500, 400)
+    window = rg.RoseWindow(800, 800)
+    draw_parallel_lines( 10, point, 50, window)
 def run_test_draw_parallel_lines():
     """ Tests the   draw_parallel_lines  function. """
     print()
@@ -109,8 +110,21 @@ def draw_parallel_lines(n, point, length, window):
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
     ####################################################################
     # ------------------------------------------------------------------
-n = int
-rg.Point
+
+    window69 = window
+    for k in range(n):
+        a = 500
+        b = 200
+        c = (501 + length)
+        d = 500
+        start = point
+        end = rg.Point(c, d)
+        line = rg.Line(start, end)
+        line.attach_to(window)
+        line.thickness = 4
+
+    window.render()
+    window.close_on_mouse_click()
 
 
 
